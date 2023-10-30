@@ -22,18 +22,44 @@
                 </div>
             </div>
         </div>
-        <div class="tw-bg-gray-700 tw-text-white tw-relative tw-z-30">
-            <div class="tw-container tw-bg-gray-700 tw-mx-auto tw-relative tw-max-w-screen-lg" data-trackarea="Primary-Nav" data-trackid="Primary-Nav" data-tracktyp="Primary-Nav">
+        <div class="tw-bg-gray-700 tw-text-white tw-relative tw-z-30" style="height: 52px;">
+            <div class="tw-container tw-bg-gray-700 tw-mx-auto tw-relative tw-max-w-screen-lg"
+                data-trackarea="Primary-Nav" data-trackid="Primary-Nav" data-tracktyp="Primary-Nav">
                 <div class="tw-flex tw-justify-between tw-items-center tw-h-full">
                     <div class="tw-flex tw-h-full">
                         <egger-nav-burger-button class="tw-text-white">
-                                <button id="burger-button" class="tw-w-12 tw-h-12 tw-flex tw-justify-center tw-items-center tw-text-white">
-                                    <i class="bi bi-list tw-text-5xl tw-leading-none">
-                                    </i>
-                                </button>
+                            <button id="burger-button"
+                                class="tw-w-12 tw-h-12 tw-flex tw-justify-center tw-items-center tw-text-white">
+                                <i class="bi bi-list tw-text-5xl tw-leading-none">
+                                </i>
+                            </button>
                         </egger-nav-burger-button>
                     </div>
-                    
+                    <div class="tw-flex tw-h-full tw-justify-end">
+                        <a href="#search-flyout"
+                            class="search-link tw-flex tw-justify-center tw-items-center tw-w-10 tw-h-full tw-text-lg tw-text-white tw-py-3 tw-leading-7">
+                            <span class="bi bi-search"></span>
+                        </a>
+                        <a href="#" class="tw-flex tw-justify-center tw-items-center tw-w-10 tw-h-full tw-text-lg tw-text-white tw-py-3 tw-leading-7 md:tw-hidden">
+                            <span class="bi bi-telephone"></span>
+                        </a>
+                        <a href="#" class="tw-flex tw-justify-center tw-items-center tw-w-10 tw-h-full tw-text-lg tw-text-white tw-py-3 tw-leading-7 md:tw-hidden">
+                            <span class="bi bi-envelope"></span>
+                        </a>
+                        <div class="country-selection-info relative hidden md:tw-block">
+                            <a href="#lang-flyout" class="lang-link tw-flex tw-justify-center tw-items-center tw-text-lg tw-text-white tw-px-5 tw-py-3 tw-leading-7 fong-metapro-bold tw-hidden md:tw-flex">
+                                <span class="tw-mr-2">CN</span>
+                                <i class="bi bi-chevron-down tw-text-sm tw-leading-none tw-scale-75"></i> 
+                            </a>
+                            <!--TODO-dropdown country select-->
+                            <div class="dropdown tw-hidden"></div>
+                        </div>
+                        <a href="#" class="tw-flex tw-justify-center tw-items-center group tw-text-lg tw-text-white tw-px-5 tw-py-3 tw-leading-7 font-metapro-bold tw-bg-red-700 tw-relative tw-hidden md:tw-flex">
+                            <i class="tw-text-xl tw-leading-none tw-mr-3 tw-relative tw-z-10 A"></i>
+                            <span class="tw-relative tw-z-10">Login</span>
+                            <span class="tw-absolute tw-top-0 tw-left-0 tw-block tw-w-full tw-h-full tw-bg-red-800 tw-transition tw-transform tw-origin-bottom tw-scale-y-0 group-hover:tw-scale-y-100 tw-z-0"></span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
