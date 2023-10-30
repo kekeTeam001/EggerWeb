@@ -1,0 +1,410 @@
+@font-face {
+    font-family: iconfont;
+    src: url("iconfont.eot");src: url("iconfont.eot?6cc14113#iefix") format("embedded-opentype"),
+             url("iconfont.woff2?6cc14113") format("woff2"),
+             url("iconfont.woff?6cc14113") format("woff"),
+             url("iconfont.ttf?6cc14113") format("truetype"),
+             url("iconfont.svg?6cc14113#iconfont") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon"], [class*=" icon"] {
+    font-family: 'iconfont' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+}
+
+
+.icon-app-store::before {
+    content: "\ea01";
+}
+
+.icon-arrow-down::before {
+    content: "\ea02";
+}
+
+.icon-arrow-left::before {
+    content: "\ea03";
+}
+
+.icon-arrow-right::before {
+    content: "\ea04";
+}
+
+.icon-arrow-up::before {
+    content: "\ea05";
+}
+
+.icon-availability-information::before {
+    content: "\ea06";
+}
+
+.icon-brochures-marketing-materials::before {
+    content: "\ea07";
+}
+
+.icon-brochures::before {
+    content: "\ea08";
+}
+
+.icon-business-user::before {
+    content: "\ea09";
+}
+
+.icon-calendar::before {
+    content: "\ea0a";
+}
+
+.icon-check-circle::before {
+    content: "\ea0b";
+}
+
+.icon-choping_board::before {
+    content: "\ea0c";
+}
+
+.icon-close::before {
+    content: "\ea0d";
+}
+
+.icon-contact::before {
+    content: "\ea0e";
+}
+
+.icon-delete-basket::before {
+    content: "\ea0f";
+}
+
+.icon-document::before {
+    content: "\ea10";
+}
+
+.icon-double-arrow::before {
+    content: "\ea11";
+}
+
+.icon-download::before {
+    content: "\ea12";
+}
+
+.icon-e-learning::before {
+    content: "\ea13";
+}
+
+.icon-easy_clean::before {
+    content: "\ea14";
+}
+
+.icon-ebp-building::before {
+    content: "\ea15";
+}
+
+.icon-eco-bioeconomy::before {
+    content: "\ea16";
+}
+
+.icon-eco-certified-wood::before {
+    content: "\ea17";
+}
+
+.icon-eco-circular-economy::before {
+    content: "\ea18";
+}
+
+.icon-eco-co2-footprint::before {
+    content: "\ea19";
+}
+
+.icon-eco-wood-regional-environment::before {
+    content: "\ea1a";
+}
+
+.icon-ecofact-bioeconomy::before {
+    content: "\ea1b";
+}
+
+.icon-ecofact-certified-wood::before {
+    content: "\ea1c";
+}
+
+.icon-ecofact-circular-economy::before {
+    content: "\ea1d";
+}
+
+.icon-ecofact-co2-footprint::before {
+    content: "\ea1e";
+}
+
+.icon-ecofact-wood-regional-environment::before {
+    content: "\ea1f";
+}
+
+.icon-edp-decorative::before {
+    content: "\ea20";
+}
+
+.icon-edp-edc-app-2020-22::before {
+    content: "\ea21";
+}
+
+.icon-efp-flooring::before {
+    content: "\ea22";
+}
+
+.icon-egger-app::before {
+    content: "\ea23";
+}
+
+.icon-egger-shop::before {
+    content: "\ea24";
+}
+
+.icon-electrical-data-transfer::before {
+    content: "\ea25";
+}
+
+.icon-email::before {
+    content: "\ea26";
+}
+
+.icon-environment::before {
+    content: "\ea27";
+}
+
+.icon-ergo-board::before {
+    content: "\ea28";
+}
+
+.icon-erp-decors::before {
+    content: "\ea29";
+}
+
+.icon-error::before {
+    content: "\ea2a";
+}
+
+.icon-exclamation-mark::before {
+    content: "\ea2b";
+}
+
+.icon-facebook::before {
+    content: "\ea2c";
+}
+
+.icon-fast-delivery-service::before {
+    content: "\ea2d";
+}
+
+.icon-favourite-heart-full::before {
+    content: "\ea2e";
+}
+
+.icon-favourite-heart::before {
+    content: "\ea2f";
+}
+
+.icon-favourites::before {
+    content: "\ea30";
+}
+
+.icon-fb::before {
+    content: "\ea31";
+}
+
+.icon-folder::before {
+    content: "\ea32";
+}
+
+.icon-google-playstore::before {
+    content: "\ea33";
+}
+
+.icon-home::before {
+    content: "\ea34";
+}
+
+.icon-hotline::before {
+    content: "\ea35";
+}
+
+.icon-in::before {
+    content: "\ea36";
+}
+
+.icon-info::before {
+    content: "\ea37";
+}
+
+.icon-ins::before {
+    content: "\ea38";
+}
+
+.icon-instagram::before {
+    content: "\ea39";
+}
+
+.icon-lightbulb::before {
+    content: "\ea3a";
+}
+
+.icon-linkedin::before {
+    content: "\ea3b";
+}
+
+.icon-loading-arrow::before {
+    content: "\ea3c";
+}
+
+.icon-loading::before {
+    content: "\ea3d";
+}
+
+.icon-location::before {
+    content: "\ea3e";
+}
+
+.icon-login::before {
+    content: "\ea3f";
+}
+
+.icon-menu::before {
+    content: "\ea40";
+}
+
+.icon-microscratch_resistant::before {
+    content: "\ea41";
+}
+
+.icon-minus::before {
+    content: "\ea42";
+}
+
+.icon-news::before {
+    content: "\ea43";
+}
+
+.icon-object-consultation::before {
+    content: "\ea44";
+}
+
+.icon-pdf-file::before {
+    content: "\ea45";
+}
+
+.icon-pinterest::before {
+    content: "\ea46";
+}
+
+.icon-plant-visit::before {
+    content: "\ea47";
+}
+
+.icon-point-of-sale::before {
+    content: "\ea48";
+}
+
+.icon-private-user::before {
+    content: "\ea49";
+}
+
+.icon-profiprogramm::before {
+    content: "\ea4a";
+}
+
+.icon-reliable-partner::before {
+    content: "\ea4b";
+}
+
+.icon-resistant-worktop::before {
+    content: "\ea4c";
+}
+
+.icon-samples::before {
+    content: "\ea4d";
+}
+
+.icon-search::before {
+    content: "\ea4e";
+}
+
+.icon-service-internet::before {
+    content: "\ea4f";
+}
+
+.icon-shopping-cart::before {
+    content: "\ea50";
+}
+
+.icon-surfaces::before {
+    content: "\ea51";
+}
+
+.icon-telephone::before {
+    content: "\ea52";
+}
+
+.icon-tick::before {
+    content: "\ea53";
+}
+
+.icon-upload::before {
+    content: "\ea54";
+}
+
+.icon-visibility-off::before {
+    content: "\ea55";
+}
+
+.icon-visibility::before {
+    content: "\ea56";
+}
+
+.icon-visualisation::before {
+    content: "\ea57";
+}
+
+.icon-vk::before {
+    content: "\ea58";
+}
+
+.icon-warning::before {
+    content: "\ea59";
+}
+
+.icon-waterproof::before {
+    content: "\ea5a";
+}
+
+.icon-webinars::before {
+    content: "\ea5b";
+}
+
+.icon-wechat::before {
+    content: "\ea5c";
+}
+
+.icon-windows-store::before {
+    content: "\ea5d";
+}
+
+.icon-youku::before {
+    content: "\ea5e";
+}
+
+.icon-youtube::before {
+    content: "\ea5f";
+}
+
+.icon-zip-file::before {
+    content: "\ea60";
+}
+
+.icon-zoom-magnifying::before {
+    content: "\ea61";
+}
+
+.icon-zoom::before {
+    content: "\ea62";
+}
