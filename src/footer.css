@@ -1,0 +1,81 @@
+footer{
+	position: relative;
+	display: block;
+	height: 430px;
+	width: 100%;
+}
+
+.footer-content{
+	top: 70px;
+	left: 0px;
+	position: absolute;
+	float: left;
+}
+
+.footer1{
+	float: left;
+}
+
+.footer1 h3{
+	color: #101010;
+	font-size: 18px;
+	margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.footer1 h3:hover{
+	color: red;
+}
+
+.footer1 ul{
+    margin: 0;
+    padding: 0;
+	font-size: 16px;
+	list-style: none;
+}
+
+.footer1 ul li{
+    text-align: left;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.footer1 ul li a{
+	text-decoration: none;
+	color: #494949;
+	font-size: 16px;
+}
+
+.footer1 ul li a:hover{
+	color: red;
+}
+
+.box1{
+    margin-right: 200px;
+}
+.box2{
+    margin-right: 200px;
+}
+.box3{
+    margin-right: 200px;
+}
+.box4{
+    margin-right: 200px;
+}
+.box5{
+    margin-right: 200px;
+}
+
+/* 屏幕宽度大于1200px时生效的样式 */
+@media(min-width:1200px){
+
+}
+
+/* 屏幕宽度大于768px并且小于1200px时生效的样式  */
+@media(max-width:1200px){
+  
+}
+/* 屏幕宽度小于768px时生效的样式  */
+@media(max-width:768px){
+
+}
