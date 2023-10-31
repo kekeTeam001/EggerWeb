@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../Assets/dist/tailwind.css">
     <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="../Assets/swiper-11.0.3/package/swiper-bundle.css">
 </head>
 
 <body>
@@ -40,31 +41,64 @@
                             class="search-link tw-flex tw-justify-center tw-items-center tw-w-10 tw-h-full tw-text-lg tw-text-white tw-py-3 tw-leading-7">
                             <span class="bi bi-search"></span>
                         </a>
-                        <a href="#" class="tw-flex tw-justify-center tw-items-center tw-w-10 tw-h-full tw-text-lg tw-text-white tw-py-3 tw-leading-7 md:tw-hidden">
+                        <a href="#"
+                            class="tw-flex tw-justify-center tw-items-center tw-w-10 tw-h-full tw-text-lg tw-text-white tw-py-3 tw-leading-7 md:tw-hidden">
                             <span class="bi bi-telephone"></span>
                         </a>
-                        <a href="#" class="tw-flex tw-justify-center tw-items-center tw-w-10 tw-h-full tw-text-lg tw-text-white tw-py-3 tw-leading-7 md:tw-hidden">
+                        <a href="#"
+                            class="tw-flex tw-justify-center tw-items-center tw-w-10 tw-h-full tw-text-lg tw-text-white tw-py-3 tw-leading-7 md:tw-hidden">
                             <span class="bi bi-envelope"></span>
                         </a>
                         <div class="country-selection-info relative hidden md:tw-block">
-                            <a href="#lang-flyout" class="lang-link tw-flex tw-justify-center tw-items-center tw-text-lg tw-text-white tw-px-5 tw-py-3 tw-leading-7 fong-metapro-bold tw-hidden md:tw-flex">
+                            <a href="#lang-flyout"
+                                class="lang-link tw-flex tw-justify-center tw-items-center tw-text-lg tw-text-white tw-px-5 tw-py-3 tw-leading-7 fong-metapro-bold tw-hidden md:tw-flex">
                                 <span class="tw-mr-2">CN</span>
-                                <i class="bi bi-chevron-down tw-text-sm tw-leading-none tw-scale-75"></i> 
+                                <i class="bi bi-chevron-down tw-text-sm tw-leading-none tw-scale-75"></i>
                             </a>
                             <!--TODO-dropdown country select-->
                             <div class="dropdown tw-hidden"></div>
                         </div>
-                        <a href="#" class="tw-flex tw-justify-center tw-items-center group tw-text-lg tw-text-white tw-px-5 tw-py-3 tw-leading-7 font-metapro-bold tw-bg-red-700 tw-relative tw-hidden md:tw-flex">
+                        <a href="#"
+                            class="tw-flex tw-justify-center tw-items-center group tw-text-lg tw-text-white tw-px-5 tw-py-3 tw-leading-7 font-metapro-bold tw-bg-red-700 tw-relative tw-hidden md:tw-flex">
                             <i class="tw-text-xl tw-leading-none tw-mr-3 tw-relative tw-z-10 A"></i>
                             <span class="tw-relative tw-z-10">Login</span>
-                            <span class="tw-absolute tw-top-0 tw-left-0 tw-block tw-w-full tw-h-full tw-bg-red-800 tw-transition tw-transform tw-origin-bottom tw-scale-y-0 group-hover:tw-scale-y-100 tw-z-0"></span>
+                            <span
+                                class="tw-absolute tw-top-0 tw-left-0 tw-block tw-w-full tw-h-full tw-bg-red-800 tw-transition tw-transform tw-origin-bottom tw-scale-y-0 group-hover:tw-scale-y-100 tw-z-0"></span>
                         </a>
                     </div>
                 </div>
+                <!--TODO 搜索结果-->
+                <div id="search-flyout">
+                </div>
             </div>
         </div>
+        <!--services, no mean in there-->
+        <div class="services tw-hidden"></div>
+        <egger-nav-flyout></egger-nav-flyout>
     </header>
+    <section id="homepage" class="tw-bg-gray-100 tw-mx-auto">
+        <div class="homestage" data-track-component="HomeStage">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="footer-content">
             <div class="footer1 box1">
@@ -109,7 +143,36 @@
             </div>
         </div>
     </footer>
+
     <script src="../Assets/bootstrap-5.3.1-dist/js/bootstrap.js"></script>
+    <script src="../Assets/swiper-11.0.3/package/swiper-bundle.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional Parameters
+            direction: 'horizontal',
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // Scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                // Makes the Scrollbar Draggable
+                draggable: true,
+                // Snaps slider position to slides when you release Scrollbar
+                snapOnRelease: true,
+                // Size (Length) of Scrollbar Draggable Element in px
+                dragSize: 'auto',
+            },
+        });
+
+        // Now you can use all slider methods like
+        swiper.slideNext(); 
+    </script>
+
 </body>
 
 </html>
