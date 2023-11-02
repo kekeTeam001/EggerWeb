@@ -79,3 +79,10 @@ footer{
 @media(max-width:768px){
 
 }
+b {
+    font-family: MetaPro-Bold,Arial,sans-serif;
+    font-weight: 400;
+}
+.txtcomp p a {
+    color: #e31937;
+}
