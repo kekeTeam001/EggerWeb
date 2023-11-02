@@ -6,11 +6,11 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4313189_zxinzanl7u.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="tailwind.css">
-    <link rel="stylesheet" href="./footer.css">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../Assets/swiper-11.0.3/package/swiper-bundle.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
         .swiper-button-prev {
             color: #e3e3e3;
@@ -37,6 +37,7 @@
             opacity: 1 !important;
             border: 0 solid #e3e3e3;
             margin-left: 6px;
+            border-radius: 0%;
         }
 
         #bottom32 {
@@ -53,57 +54,56 @@
 
 <body>
     <header class="relative z-50 mx-auto">
-        <div class="tw-container tw-mx-auto tw-py-8 tw-relative tw-z-30 tw-max-w-screen-lg">
-            <div class="tw-flex tw-justify-between tw-items-center">
-                <a class="tw-block" title="EGGER" href="./index.html">
+        <div class="container mx-auto py-8 relative z-30 max-w-screen-lg">
+            <div class="flex justify-between items-center">
+                <a class="block" title="EGGER" href="./index.html">
                     <img src="../Assets/images/gen_eggerlogo.svg" alt="..." width="157">
                 </a>
-                <div class="tw-invisible xl:tw-visible">
-                    <img class="tw-float-right" width="220" src="../Assets/images/gen_claim_tagline_cn.svg" alt="">
+                <div class="invisible xl:visible">
+                    <img class="float-right" width="220" src="../Assets/images/gen_claim_tagline_cn.svg" alt="">
                 </div>
             </div>
         </div>
-        <div class="tw-bg-gray-700 tw-text-white tw-relative tw-z-30" style="height: 52px;">
-            <div class="tw-container tw-bg-gray-700 tw-mx-auto tw-relative tw-max-w-screen-lg"
-                data-trackarea="Primary-Nav" data-trackid="Primary-Nav" data-tracktyp="Primary-Nav">
-                <div class="tw-flex tw-justify-between tw-items-center tw-h-full">
-                    <div class="tw-flex tw-h-full">
-                        <egger-nav-burger-button class="tw-text-white">
-                            <button id="burger-button"
-                                class="tw-w-12 tw-h-12 tw-flex tw-justify-center tw-items-center tw-text-white">
-                                <i class="bi bi-list tw-text-5xl tw-leading-none">
+        <div class="bg-gray-700 text-white relative z-30" style="height: 52px;">
+            <div class="container bg-gray-700 mx-auto relative max-w-screen-lg" data-trackarea="Primary-Nav"
+                data-trackid="Primary-Nav" data-tracktyp="Primary-Nav">
+                <div class="flex justify-between items-center h-full">
+                    <div class="flex h-full">
+                        <egger-nav-burger-button class="text-white">
+                            <button id="burger-button" class="w-12 h-12 flex justify-center items-center text-white">
+                                <i class="bi bi-list text-5xl leading-none">
                                 </i>
                             </button>
                         </egger-nav-burger-button>
                     </div>
-                    <div class="tw-flex tw-h-full tw-justify-end">
+                    <div class="flex h-full justify-end">
                         <a href="#search-flyout"
-                            class="search-link tw-flex tw-justify-center tw-items-center tw-w-10 tw-h-full tw-text-lg tw-text-white tw-py-3 tw-leading-7">
+                            class="search-link flex justify-center items-center w-10 h-full text-lg text-white py-3 leading-7">
                             <span class="bi bi-search"></span>
                         </a>
                         <a href="#"
-                            class="tw-flex tw-justify-center tw-items-center tw-w-10 tw-h-full tw-text-lg tw-text-white tw-py-3 tw-leading-7 md:tw-hidden">
+                            class="flex justify-center items-center w-10 h-full text-lg text-white py-3 leading-7 md:hidden">
                             <span class="bi bi-telephone"></span>
                         </a>
                         <a href="#"
-                            class="tw-flex tw-justify-center tw-items-center tw-w-10 tw-h-full tw-text-lg tw-text-white tw-py-3 tw-leading-7 md:tw-hidden">
+                            class="flex justify-center items-center w-10 h-full text-lg text-white py-3 leading-7 md:hidden">
                             <span class="bi bi-envelope"></span>
                         </a>
-                        <div class="country-selection-info relative hidden md:tw-block">
+                        <div class="country-selection-info relative hidden md:block md:visible">
                             <a href="#lang-flyout"
-                                class="lang-link tw-flex tw-justify-center tw-items-center tw-text-lg tw-text-white tw-px-5 tw-py-3 tw-leading-7 fong-metapro-bold tw-hidden md:tw-flex">
-                                <span class="tw-mr-2">CN</span>
-                                <i class="bi bi-chevron-down tw-text-sm tw-leading-none tw-scale-75"></i>
+                                class="lang-link flex justify-center items-center text-lg text-white px-5 py-3 leading-7 font-metapro-bold hidden md:flex">
+                                <span class="mr-2">CN</span>
+                                <i class="bi bi-chevron-down text-sm leading-none scale-75"></i>
                             </a>
                             <!--TODO-dropdown country select-->
-                            <div class="dropdown tw-hidden"></div>
+                            <div class="dropdown hidden"></div>
                         </div>
                         <a href="#"
-                            class="tw-flex tw-justify-center tw-items-center group tw-text-lg tw-text-white tw-px-5 tw-py-3 tw-leading-7 font-metapro-bold tw-bg-red-700 tw-relative tw-hidden md:tw-flex">
-                            <i class="tw-text-xl tw-leading-none tw-mr-3 tw-relative tw-z-10 A"></i>
-                            <span class="tw-relative tw-z-10">Login</span>
+                            class="flex justify-center items-center group text-lg text-white px-5 py-3 leading-7 font-metapro-bold bg-red-700 relative hidden md:flex">
+                            <i class="text-xl leading-none mr-3 relative z-10 A"></i>
+                            <span class="relative z-10">Login</span>
                             <span
-                                class="tw-absolute tw-top-0 tw-left-0 tw-block tw-w-full tw-h-full tw-bg-red-800 tw-transition tw-transform tw-origin-bottom tw-scale-y-0 group-hover:tw-scale-y-100 tw-z-0"></span>
+                                class="absolute top-0 left-0 block w-full h-full bg-red-800 transition transform origin-bottom scale-y-0 group-hover:scale-y-100 z-0"></span>
                         </a>
                     </div>
                 </div>
@@ -113,160 +113,155 @@
             </div>
         </div>
         <!--services, no mean in there-->
-        <div class="services tw-hidden"></div>
+        <div class="services hidden"></div>
         <egger-nav-flyout></egger-nav-flyout>
     </header>
-    <section id="homepage" class="tw-bg-gray-100 tw-mx-auto">
-        <div class="homestage tw-w-full aspect-square md:h-[350px] lg:h-[500px]" data-track-component="HomeStage">
+    <section id="homepage" class="bg-gray-100 mx-auto">
+        <div class="homestage w-full aspect-square md:h-[350px] lg:h-[500px]" data-track-component="HomeStage">
             <div class="swiper swiper-horizontal">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" data-swiper-slide-index="0" role="group" aria-label="1 / 5">
-                        <div class="tw-aspect-w-1 tw-aspect-h-1 md:tw-aspect-none md:h-[350px] lg:h-[500px]">
+                        <div class="aspect-w-1 aspect-h-1 md:aspect-none md:h-[350px] lg:h-[500px]">
                             <picture>
                                 <source type="image/webp" srcset="../Assets/images/edp_edc24_prelaunch_st40.webp">
-                                <img class="tw-w-full tw-h-full tw-object-center tw-object-cover lg:tw-w-full lg:tw-h-full"
+                                <img class="w-full h-full object-center object-cover lg:w-full lg:h-full"
                                     alt="更多自然，就在此刻" title="更多自然，就在此刻"
                                     src="../Assets/images/edp_edc24_prelaunch_st40.webp">
                             </picture>
                         </div>
-                        <div class="tw-container tw-h-full tw-absolute tw-top-1/2 tw-left-1/2 
-                                    tw-z-10 tw-transform tw--translate-x-1/2 tw--translate-y-1/2 tw-max-w-screen-lg">
-                            <div class="overlay bg-[#B90009]/70 tw-text-white tw-right-auto md:tw-right-auto 
-                                        lg:translate-y-0 lg:translate-x-0 lg:tw-left-auto tw-left-1/2 md:tw-visible 
-                                        tw-translate-y-0 lg:tw-top-16 tw-w-3/4 lg:tw-bottom-auto tw-visible md:tw-top-16 
-                                        md:tw-translate-y-0 md:max-w-[40%] lg:tw-visible md:tw-bottom-auto tw-top-4 
-                                        md:tw-translate-x-0 md:tw-w-auto tw-absolute md:tw-left-8 tw-bottom-auto 
-                                        lg:tw-right-12 tw--translate-x-1/2">
-                                <a title="继续" class="tw-text-white tw-block tw-p-5 group"
-                                    data-track-id="inline_internal" href="#">
-                                    <div
-                                        class="tw-leading-none tw-mb-3 tw-text-white tw-text-xl md:tw-text-2xl font-metapro-bold">
+                        <div class="container h-full absolute top-1/2 left-1/2 
+                                    z-10 transform -translate-x-1/2 -translate-y-1/2 max-w-screen-lg">
+                            <div class="overlay bg-[#B90009]/70 text-white right-auto md:right-auto 
+                                        lg:translate-y-0 lg:translate-x-0 lg:left-auto left-1/2 md:visible 
+                                        translate-y-0 lg:top-16 w-3/4 lg:bottom-auto visible md:top-16 
+                                        md:translate-y-0 md:max-w-[40%] lg:visible md:bottom-auto top-4 
+                                        md:translate-x-0 md:w-auto absolute md:left-8 bottom-auto 
+                                        lg:right-12 -translate-x-1/2">
+                                <a title="继续" class="text-white block p-5 group" data-track-id="inline_internal"
+                                    href="#">
+                                    <div class="leading-none mb-3 text-white text-xl md:text-2xl font-metapro-bold">
                                         爱格地板新品2023-重塑自我空间　
                                     </div>
-                                    <span class="tw-text-white font-metapro-medium group-hover:tw-bg-black">>> 继续</span>
+                                    <span class="text-white font-metapro-medium group-hover:bg-black">>> 继续</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 5">
-                        <div class="tw-aspect-w-1 tw-aspect-h-1 md:tw-aspect-none md:h-[350px] lg:h-[500px]">
+                        <div class="aspect-w-1 aspect-h-1 md:aspect-none md:h-[350px] lg:h-[500px]">
                             <picture>
                                 <source type="image/webp"
                                     srcset="../Assets/images/efp_laminate_kitchen_classic_wv4_el1004_st41.webp">
-                                <img class="tw-w-full tw-h-full tw-object-center tw-object-cover lg:tw-w-full lg:tw-h-full"
+                                <img class="w-full h-full object-center object-cover lg:w-full lg:h-full"
                                     alt="爱格地板新品 2023" title="爱格地板新品 2023"
                                     src="../Assets/images/efp_laminate_kitchen_classic_wv4_el1004_st41.webp">
                             </picture>
                         </div>
-                        <div class="tw-container tw-h-full tw-absolute tw-top-1/2 tw-left-1/2 
-                                    tw-z-10 tw-transform tw--translate-x-1/2 tw--translate-y-1/2 tw-max-w-screen-lg">
-                            <div class="overlay bg-[#B90009]/70 tw-text-white tw-right-auto md:tw-right-auto 
-                                        lg:translate-y-0 lg:translate-x-0 lg:tw-left-auto tw-left-1/2 md:tw-visible 
-                                        tw-translate-y-0 lg:tw-top-16 tw-w-3/4 lg:tw-bottom-auto tw-visible md:tw-top-16 
-                                        md:tw-translate-y-0 md:max-w-[40%] lg:tw-visible md:tw-bottom-auto tw-top-4 
-                                        md:tw-translate-x-0 md:tw-w-auto tw-absolute md:tw-left-8 tw-bottom-auto 
-                                        lg:tw-right-12 tw--translate-x-1/2">
-                                <a title="继续" class="tw-text-white tw-block tw-p-5 group"
-                                    data-track-id="inline_internal" href="#">
-                                    <div
-                                        class="tw-leading-none tw-mb-3 tw-text-white tw-text-xl md:tw-text-2xl font-metapro-bold">
+                        <div class="container h-full absolute top-1/2 left-1/2 
+                                    z-10 transform -translate-x-1/2 -translate-y-1/2 max-w-screen-lg">
+                            <div class="overlay bg-[#B90009]/70 text-white right-auto md:right-auto 
+                                        lg:translate-y-0 lg:translate-x-0 lg:left-auto left-1/2 md:visible 
+                                        translate-y-0 lg:top-16 w-3/4 lg:bottom-auto visible md:top-16 
+                                        md:translate-y-0 md:max-w-[40%] lg:visible md:bottom-auto top-4 
+                                        md:translate-x-0 md:w-auto absolute md:left-8 bottom-auto 
+                                        lg:right-12 -translate-x-1/2">
+                                <a title="继续" class="text-white block p-5 group" data-track-id="inline_internal"
+                                    href="#">
+                                    <div class="leading-none mb-3 text-white text-xl md:text-2xl font-metapro-bold">
                                         爱格地板新品2023-重塑自我空间　
                                     </div>
-                                    <span class="tw-text-white font-metapro-medium group-hover:tw-bg-black">>> 继续</span>
+                                    <span class="text-white font-metapro-medium group-hover:bg-black">>> 继续</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <!--1、3、4、5都是copy的2-->
                     <div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 5">
-                        <div class="tw-aspect-w-1 tw-aspect-h-1 md:tw-aspect-none md:h-[350px] lg:h-[500px]">
+                        <div class="aspect-w-1 aspect-h-1 md:aspect-none md:h-[350px] lg:h-[500px]">
                             <picture>
                                 <source type="image/webp"
                                     srcset="../Assets/images/edp_create_transitions_keyvisual.webp">
-                                <img class="tw-w-full tw-h-full tw-object-center tw-object-cover lg:tw-w-full lg:tw-h-full"
+                                <img class="w-full h-full object-center object-cover lg:w-full lg:h-full"
                                     alt="爱格地板新品 2023" title="爱格地板新品 2023"
                                     src="../Assets/images/edp_create_transitions_keyvisual.webp">
                             </picture>
                         </div>
-                        <div class="tw-container tw-h-full tw-absolute tw-top-1/2 tw-left-1/2 
-                                    tw-z-10 tw-transform tw--translate-x-1/2 tw--translate-y-1/2 tw-max-w-screen-lg">
-                            <div class="overlay bg-[#B90009]/70 tw-text-white tw-right-auto md:tw-right-auto 
-                                        lg:translate-y-0 lg:translate-x-0 lg:tw-left-auto tw-left-1/2 md:tw-visible 
-                                        tw-translate-y-0 lg:tw-top-16 tw-w-3/4 lg:tw-bottom-auto tw-visible md:tw-top-16 
-                                        md:tw-translate-y-0 md:max-w-[40%] lg:tw-visible md:tw-bottom-auto tw-top-4 
-                                        md:tw-translate-x-0 md:tw-w-auto tw-absolute md:tw-left-8 tw-bottom-auto 
-                                        lg:tw-right-12 tw--translate-x-1/2">
-                                <a title="继续" class="tw-text-white tw-block tw-p-5 group"
-                                    data-track-id="inline_internal" href="#">
-                                    <div
-                                        class="tw-leading-none tw-mb-3 tw-text-white tw-text-xl md:tw-text-2xl font-metapro-bold">
+                        <div class="container h-full absolute top-1/2 left-1/2 
+                                    z-10 transform -translate-x-1/2 -translate-y-1/2 max-w-screen-lg">
+                            <div class="overlay bg-[#B90009]/70 text-white right-auto md:right-auto 
+                                        lg:translate-y-0 lg:translate-x-0 lg:left-auto left-1/2 md:visible 
+                                        translate-y-0 lg:top-16 w-3/4 lg:bottom-auto visible md:top-16 
+                                        md:translate-y-0 md:max-w-[40%] lg:visible md:bottom-auto top-4 
+                                        md:translate-x-0 md:w-auto absolute md:left-8 bottom-auto 
+                                        lg:right-12 -translate-x-1/2">
+                                <a title="继续" class="text-white block p-5 group" data-track-id="inline_internal"
+                                    href="#">
+                                    <div class="leading-none mb-3 text-white text-xl md:text-2xl font-metapro-bold">
                                         爱格地板新品2023-重塑自我空间　
                                     </div>
-                                    <span class="tw-text-white font-metapro-medium group-hover:tw-bg-black">>> 继续</span>
+                                    <span class="text-white font-metapro-medium group-hover:bg-black">>> 继续</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 5">
-                        <div class="tw-aspect-w-1 tw-aspect-h-1 md:tw-aspect-none md:h-[350px] lg:h-[500px]">
+                        <div class="aspect-w-1 aspect-h-1 md:aspect-none md:h-[350px] lg:h-[500px]">
                             <picture>
                                 <source type="image/webp"
                                     srcset="../Assets/images/cs_private_kitchen_aurach_perfectsense_feelwood_u999_tm28_black_shelves.webp">
-                                <img class="tw-w-full tw-h-full tw-object-center tw-object-cover lg:tw-w-full lg:tw-h-full"
+                                <img class="w-full h-full object-center object-cover lg:w-full lg:h-full"
                                     alt="爱格地板新品 2023" title="爱格地板新品 2023"
                                     src="../Assets/images/cs_private_kitchen_aurach_perfectsense_feelwood_u999_tm28_black_shelves.webp">
                             </picture>
                         </div>
-                        <div class="tw-container tw-h-full tw-absolute tw-top-1/2 tw-left-1/2 
-                                    tw-z-10 tw-transform tw--translate-x-1/2 tw--translate-y-1/2 tw-max-w-screen-lg">
-                            <div class="overlay bg-[#B90009]/70 tw-text-white tw-right-auto md:tw-right-auto 
-                                        lg:translate-y-0 lg:translate-x-0 lg:tw-left-auto tw-left-1/2 md:tw-visible 
-                                        tw-translate-y-0 lg:tw-top-16 tw-w-3/4 lg:tw-bottom-auto tw-visible md:tw-top-16 
-                                        md:tw-translate-y-0 md:max-w-[40%] lg:tw-visible md:tw-bottom-auto tw-top-4 
-                                        md:tw-translate-x-0 md:tw-w-auto tw-absolute md:tw-left-8 tw-bottom-auto 
-                                        lg:tw-right-12 tw--translate-x-1/2">
-                                <a title="继续" class="tw-text-white tw-block tw-p-5 group"
-                                    data-track-id="inline_internal" href="#">
-                                    <div
-                                        class="tw-leading-none tw-mb-3 tw-text-white tw-text-xl md:tw-text-2xl font-metapro-bold">
+                        <div class="container h-full absolute top-1/2 left-1/2 
+                                    z-10 transform -translate-x-1/2 -translate-y-1/2 max-w-screen-lg">
+                            <div class="overlay bg-[#B90009]/70 text-white right-auto md:right-auto 
+                                        lg:translate-y-0 lg:translate-x-0 lg:left-auto left-1/2 md:visible 
+                                        translate-y-0 lg:top-16 w-3/4 lg:bottom-auto visible md:top-16 
+                                        md:translate-y-0 md:max-w-[40%] lg:visible md:bottom-auto top-4 
+                                        md:translate-x-0 md:w-auto absolute md:left-8 bottom-auto 
+                                        lg:right-12 -translate-x-1/2">
+                                <a title="继续" class="text-white block p-5 group" data-track-id="inline_internal"
+                                    href="#">
+                                    <div class="leading-none mb-3 text-white text-xl md:text-2xl font-metapro-bold">
                                         爱格地板新品2023-重塑自我空间　
                                     </div>
-                                    <span class="tw-text-white font-metapro-medium group-hover:tw-bg-black">>> 继续</span>
+                                    <span class="text-white font-metapro-medium group-hover:bg-black">>> 继续</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide" data-swiper-slide-index="4" role="group" aria-label="5 / 5">
-                        <div class="tw-aspect-w-1 tw-aspect-h-1 md:tw-aspect-none md:h-[350px] lg:h-[500px]">
+                        <div class="aspect-w-1 aspect-h-1 md:aspect-none md:h-[350px] lg:h-[500px]">
                             <picture>
                                 <source type="image/webp"
                                     srcset="../Assets/images/sup_socialmedia_cobranding_smartphone_mockup.webp">
-                                <img class="tw-w-full tw-h-full tw-object-center tw-object-cover lg:tw-w-full lg:tw-h-full"
+                                <img class="w-full h-full object-center object-cover lg:w-full lg:h-full"
                                     alt="爱格地板新品 2023" title="爱格地板新品 2023"
                                     src="../Assets/images/sup_socialmedia_cobranding_smartphone_mockup.webp">
                             </picture>
                         </div>
-                        <div class="tw-container tw-h-full tw-absolute tw-top-1/2 tw-left-1/2 
-                                    tw-z-10 tw-transform tw--translate-x-1/2 tw--translate-y-1/2 tw-max-w-screen-lg">
-                            <div class="overlay bg-[#B90009]/70 tw-text-white tw-right-auto md:tw-right-auto 
-                                        lg:translate-y-0 lg:translate-x-0 lg:tw-left-auto tw-left-1/2 md:tw-visible 
-                                        tw-translate-y-0 lg:tw-top-16 tw-w-3/4 lg:tw-bottom-auto tw-visible md:tw-top-16 
-                                        md:tw-translate-y-0 md:max-w-[40%] lg:tw-visible md:tw-bottom-auto tw-top-4 
-                                        md:tw-translate-x-0 md:tw-w-auto tw-absolute md:tw-left-8 tw-bottom-auto 
-                                        lg:tw-right-12 tw--translate-x-1/2">
-                                <a title="继续" class="tw-text-white tw-block tw-p-5 group"
-                                    data-track-id="inline_internal" href="#">
-                                    <div
-                                        class="tw-leading-none tw-mb-3 tw-text-white tw-text-xl md:tw-text-2xl font-metapro-bold">
+                        <div class="container h-full absolute top-1/2 left-1/2 
+                                    z-10 transform -translate-x-1/2 -translate-y-1/2 max-w-screen-lg">
+                            <div class="overlay bg-[#B90009]/70 text-white right-auto md:right-auto 
+                                        lg:translate-y-0 lg:translate-x-0 lg:left-auto left-1/2 md:visible 
+                                        translate-y-0 lg:top-16 w-3/4 lg:bottom-auto visible md:top-16 
+                                        md:translate-y-0 md:max-w-[40%] lg:visible md:bottom-auto top-4 
+                                        md:translate-x-0 md:w-auto absolute md:left-8 bottom-auto 
+                                        lg:right-12 -translate-x-1/2">
+                                <a title="继续" class="text-white block p-5 group" data-track-id="inline_internal"
+                                    href="#">
+                                    <div class="leading-none mb-3 text-white text-xl md:text-2xl font-metapro-bold">
                                         爱格地板新品2023-重塑自我空间　
                                     </div>
-                                    <span class="tw-text-white font-metapro-medium group-hover:tw-bg-black">>> 继续</span>
+                                    <span class="text-white font-metapro-medium group-hover:bg-black">>> 继续</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination tw-absolute tw-bottom-0 md:tw-bottom-8 swiper-pagination-clickable 
+                <div class="swiper-pagination absolute bottom-0 md:bottom-8 swiper-pagination-clickable 
                             swiper-pagination-bullets swiper-pagination-horizontal" id="bottom32">
                     <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
                     <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
@@ -283,78 +278,73 @@
                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
             </div>
         </div>
-        <div class="home-icon-list tw-relative tw-mt-0 md:tw--mt-16 
-                    tw-z-10 tw-mb-0 md:tw-mb-5" data-track-component="HomeIconList">
-            <div class="tw-container tw-mx-auto tw-py-5 tw-bg-gray-200 md:tw-bg-transparent tw-max-w-screen-lg">
-                <ul class="tw-flex tw-flex-col md:tw-flex-row md:tw-divide-x md:tw-divide-gray-50 ">
-                    <li class="tw-flex-1 tw-bg-white tw-mb-2.5 md:tw-mb-0">
-                        <a title="室内家具/设计" class="group tw-flex md:tw-flex-col lg:tw-flex-row tw-justify-start md:tw-justify-center 
-                            tw-items-center tw-h-full tw-text-base md:tw-text-lg tw-text-gray-500 font-metapro-medium
-                            tw-px-5 tw-py-2.5 md:tw-py-6 tw-relative" data-track-id="inline_external" href="#">
-                            <span
-                                class="tw-text-3xl md:tw-text-4xl tw-leading-none tw-mr-5 md:tw-mr-0 md:tw-mb-2.5
-                                        lg:tw-mr-5 lg:tw-mb-0 group-hover:tw-bg-red-600 tw-relative tw-z-10 iconfont icon-jiaju-">
+        <div class="home-icon-list relative mt-0 md:-mt-16 
+                    z-10 mb-0 md:mb-5" data-track-component="HomeIconList">
+            <div class="container mx-auto py-5 bg-gray-200 md:bg-transparent max-w-screen-lg">
+                <ul class="flex flex-col md:flex-row md:divide-x md:divide-gray-50 ">
+                    <li class="flex-1 bg-white mb-2.5 md:mb-0">
+                        <a title="室内家具/设计" class="group flex md:flex-col lg:flex-row justify-start md:justify-center 
+                            items-center h-full text-base md:text-lg text-gray-500 font-metapro-medium
+                            px-5 py-2.5 md:py-6 relative" data-track-id="inline_external" href="#">
+                            <span class="text-3xl md:text-4xl leading-none mr-5 md:mr-0 md:mb-2.5
+                                        lg:mr-5 lg:mb-0 group-hover:bg-red-600 relative z-10 iconfont icon-jiaju-">
                             </span>
-                            <p class="tw-m-0 tw-w-auto md:tw-w-24 tw-text-center tw-relative tw-z-10">室内设计/家具</p>
+                            <p class="m-0 w-auto md:w-24 text-center relative z-10">室内设计/家具</p>
                             <span
-                                class="tw-absolute tw-top-0 tw-left-0 tw-block tw-w-full tw-h-full tw-bg-gray-100
-                                        tw-transition tw-transform tw-origin-bottom tw-scale-y-0 group-hover:tw-scale-y-100 tw-z-0"></span>
+                                class="absolute top-0 left-0 block w-full h-full bg-gray-100
+                                        transition transform origin-bottom scale-y-0 group-hover:scale-y-100 z-0"></span>
                         </a>
                     </li>
-                    <li class="tw-flex-1 tw-bg-white tw-mb-2.5 md:tw-mb-0">
-                        <a title="地板" class="group tw-flex md:tw-flex-col lg:tw-flex-row tw-justify-start md:tw-justify-center 
-                            tw-items-center tw-h-full tw-text-base md:tw-text-lg tw-text-gray-500 font-metapro-medium
-                            tw-px-5 tw-py-2.5 md:tw-py-6 tw-relative" data-track-id="inline_external" href="#">
-                            <span
-                                class="tw-text-3xl md:tw-text-4xl tw-leading-none tw-mr-5 md:tw-mr-0 md:tw-mb-2.5
-                                        lg:tw-mr-5 lg:tw-mb-0 group-hover:tw-bg-red-600 tw-relative tw-z-10 iconfont icon-diban">
+                    <li class="flex-1 bg-white mb-2.5 md:mb-0">
+                        <a title="地板" class="group flex md:flex-col lg:flex-row justify-start md:justify-center 
+                            items-center h-full text-base md:text-lg text-gray-500 font-metapro-medium
+                            px-5 py-2.5 md:py-6 relative" data-track-id="inline_external" href="#">
+                            <span class="text-3xl md:text-4xl leading-none mr-5 md:mr-0 md:mb-2.5
+                                        lg:mr-5 lg:mb-0 group-hover:bg-red-600 relative z-10 iconfont icon-diban">
                             </span>
-                            <p class="tw-m-0 tw-w-auto md:tw-w-24 tw-text-center tw-relative tw-z-10">室内设计/家具</p>
+                            <p class="m-0 w-auto md:w-24 text-center relative z-10">室内设计/家具</p>
                             <span
-                                class="tw-absolute tw-top-0 tw-left-0 tw-block tw-w-full tw-h-full tw-bg-gray-100
-                                        tw-transition tw-transform tw-origin-bottom tw-scale-y-0 group-hover:tw-scale-y-100 tw-z-0"></span>
+                                class="absolute top-0 left-0 block w-full h-full bg-gray-100
+                                        transition transform origin-bottom scale-y-0 group-hover:scale-y-100 z-0"></span>
                         </a>
                     </li>
-                    <li class="tw-flex-1 tw-bg-white tw-mb-2.5 md:tw-mb-0">
-                        <a title="室内家具/设计" class="group tw-flex md:tw-flex-col lg:tw-flex-row tw-justify-start md:tw-justify-center 
-                            tw-items-center tw-h-full tw-text-base md:tw-text-lg tw-text-gray-500 font-metapro-medium
-                            tw-px-5 tw-py-2.5 md:tw-py-6 tw-relative" data-track-id="inline_external" href="#">
-                            <span
-                                class="tw-text-3xl md:tw-text-4xl tw-leading-none tw-mr-5 md:tw-mr-0 md:tw-mb-2.5
-                                        lg:tw-mr-5 lg:tw-mb-0 group-hover:tw-bg-red-600 tw-relative tw-z-10 iconfont icon-nigong">
+                    <li class="flex-1 bg-white mb-2.5 md:mb-0">
+                        <a title="室内家具/设计" class="group flex md:flex-col lg:flex-row justify-start md:justify-center 
+                            items-center h-full text-base md:text-lg text-gray-500 font-metapro-medium
+                            px-5 py-2.5 md:py-6 relative" data-track-id="inline_external" href="#">
+                            <span class="text-3xl md:text-4xl leading-none mr-5 md:mr-0 md:mb-2.5
+                                        lg:mr-5 lg:mb-0 group-hover:bg-red-600 relative z-10 iconfont icon-nigong">
                             </span>
-                            <p class="tw-m-0 tw-w-auto md:tw-w-24 tw-text-center tw-relative tw-z-10">室内设计/家具</p>
+                            <p class="m-0 w-auto md:w-24 text-center relative z-10">室内设计/家具</p>
                             <span
-                                class="tw-absolute tw-top-0 tw-left-0 tw-block tw-w-full tw-h-full tw-bg-gray-100
-                                        tw-transition tw-transform tw-origin-bottom tw-scale-y-0 group-hover:tw-scale-y-100 tw-z-0"></span>
+                                class="absolute top-0 left-0 block w-full h-full bg-gray-100
+                                        transition transform origin-bottom scale-y-0 group-hover:scale-y-100 z-0"></span>
                         </a>
                     </li>
-                    <li class="tw-flex-1 tw-bg-white tw-mb-2.5 md:tw-mb-0">
-                        <a title="室内家具/设计" class="group tw-flex md:tw-flex-col lg:tw-flex-row tw-justify-start md:tw-justify-center 
-                            tw-items-center tw-h-full tw-text-base md:tw-text-lg tw-text-gray-500 font-metapro-medium
-                            tw-px-5 tw-py-2.5 md:tw-py-6 tw-relative" data-track-id="inline_external" href="#">
-                            <span
-                                class="tw-text-3xl md:tw-text-4xl tw-leading-none tw-mr-5 md:tw-mr-0 md:tw-mb-2.5
-                                        lg:tw-mr-5 lg:tw-mb-0 group-hover:tw-bg-red-600 tw-relative tw-z-10 iconfont icon-yigui">
+                    <li class="flex-1 bg-white mb-2.5 md:mb-0">
+                        <a title="室内家具/设计" class="group flex md:flex-col lg:flex-row justify-start md:justify-center 
+                            items-center h-full text-base md:text-lg text-gray-500 font-metapro-medium
+                            px-5 py-2.5 md:py-6 relative" data-track-id="inline_external" href="#">
+                            <span class="text-3xl md:text-4xl leading-none mr-5 md:mr-0 md:mb-2.5
+                                        lg:mr-5 lg:mb-0 group-hover:bg-red-600 relative z-10 iconfont icon-yigui">
                             </span>
-                            <p class="tw-m-0 tw-w-auto md:tw-w-24 tw-text-center tw-relative tw-z-10">室内设计/家具</p>
+                            <p class="m-0 w-auto md:w-24 text-center relative z-10">室内设计/家具</p>
                             <span
-                                class="tw-absolute tw-top-0 tw-left-0 tw-block tw-w-full tw-h-full tw-bg-gray-100
-                                        tw-transition tw-transform tw-origin-bottom tw-scale-y-0 group-hover:tw-scale-y-100 tw-z-0"></span>
+                                class="absolute top-0 left-0 block w-full h-full bg-gray-100
+                                        transition transform origin-bottom scale-y-0 group-hover:scale-y-100 z-0"></span>
                         </a>
                     </li>
-                    <li class="tw-flex-1 tw-bg-white tw-mb-2.5 md:tw-mb-0">
-                        <a title="室内家具/设计" class="group tw-flex md:tw-flex-col lg:tw-flex-row tw-justify-start md:tw-justify-center 
-                            tw-items-center tw-h-full tw-text-base md:tw-text-lg tw-text-gray-500 font-metapro-medium
-                            tw-px-5 tw-py-2.5 md:tw-py-6 tw-relative" data-track-id="inline_external" href="#">
-                            <span
-                                class="tw-text-3xl md:tw-text-4xl tw-leading-none tw-mr-5 md:tw-mr-0 md:tw-mb-2.5
-                                        lg:tw-mr-5 lg:tw-mb-0 group-hover:tw-bg-red-600 tw-relative tw-z-10 iconfont icon-ii">
+                    <li class="flex-1 bg-white mb-2.5 md:mb-0">
+                        <a title="室内家具/设计" class="group flex md:flex-col lg:flex-row justify-start md:justify-center 
+                            items-center h-full text-base md:text-lg text-gray-500 font-metapro-medium
+                            px-5 py-2.5 md:py-6 relative" data-track-id="inline_external" href="#">
+                            <span class="text-3xl md:text-4xl leading-none mr-5 md:mr-0 md:mb-2.5
+                                        lg:mr-5 lg:mb-0 group-hover:bg-red-600 relative z-10 iconfont icon-ii">
                             </span>
-                            <p class="tw-m-0 tw-w-auto md:tw-w-24 tw-text-center tw-relative tw-z-10">室内设计/家具</p>
+                            <p class="m-0 w-auto md:w-24 text-center relative z-10">室内设计/家具</p>
                             <span
-                                class="tw-absolute tw-top-0 tw-left-0 tw-block tw-w-full tw-h-full tw-bg-gray-100
-                                        tw-transition tw-transform tw-origin-bottom tw-scale-y-0 group-hover:tw-scale-y-100 tw-z-0"></span>
+                                class="absolute top-0 left-0 block w-full h-full bg-gray-100
+                                        transition transform origin-bottom scale-y-0 group-hover:scale-y-100 z-0"></span>
                         </a>
                     </li>
                 </ul>
@@ -580,7 +570,8 @@
                                     <img alt="软件" title="软件" class="object-cover block w-full h-full"
                                         src="https://cdn.egger.com/img/cms/ff58d5b2-cb11-41dc-ba72-5cec737f1c8a/91cea49c-5a38-4a34-8fbe-024b16e9e340/ORIGINAL/sup_vds_online_digital_solutions_display.jpg?cachekey=6451228cf3d2c920ddc6ea83">
                                 </picture>
-                            </a></div>
+                            </a>
+                        </div>
                         <div class="overlay bg-[#B90009]/70 text-white right-auto md:right-auto top-auto md:max-w-[75%] lg:translate-y-0 lg:left-1/2 lg:-translate-x-1/2 lg:right-auto left-1/2 md:visible translate-y-0 bottom-4 md:top-auto w-3/4 visible md:-translate-x-1/2 md:translate-y-0 lg:bottom-4 lg:visible lg:top-auto md:w-auto md:bottom-4 absolute md:left-1/2 -translate-x-1/2"
                             data-track-component="Overlay"><a title="更多关于虚拟设计工作室的信息" class="text-white block p-5 group"
                                 data-track-id="inline_internal" href="/zh/support/virtual-design-studio?country=CN">
@@ -594,6 +585,66 @@
             </div>
         </div>
     </section>
+    <div class="footer-cta-section bg-gray-200 mx-auto">
+        <div class="container mx-auto py-12 max-w-screen-lg">
+            <div class="grid grid-cols-12 gap-0 lg:gap-20">
+                <div class="col-span-12 lg:col-span-7 lg:border-r lg:border-solid lg:border-gray-500">
+                    <div class="my-egger-cta txtcomp" data-track-component="MyEggerCta">
+                        <h3 class="mb-5">myEGGER</h3>
+                        <div class="flex flex-wrap">
+                            <div class="w-full md:w-1/2 pr-0 md:pr-20">
+                                <p><a class="cta inline-flex items-center py-3 px-2 text-lg leading-6 font-metapro-medium text-red-600 hover:text-red-800 no-underline hover:no-underline transition-all duration-300"
+                                        href="#" target="_self" data-no-follow="false" data-track-id="cta_external"><i
+                                            class="bi bi-arrow-right text-sm mr-1"></i>登录</a>
+                                </p>
+                                <p><a class="cta inline-flex items-center py-3 px-2 text-lg leading-6 font-metapro-medium text-red-600 hover:text-red-800 no-underline hover:no-underline transition-all duration-300"
+                                        href="#" target="_self" data-no-follow="false" data-track-id="cta_external"><i
+                                            class="bi bi-arrow-right text-sm mr-1"></i>注册</a>
+                                </p>
+                            </div>
+                            <div class="w-full md:w-1/2 pr-0 md:pr-20"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-5">
+                    <div class="simple-cta txtcomp"><span class="block w-14 h-1 bg-red-700 mb-2"></span>
+                        <h3 class="mb-5">爱格中国授权经销商</h3>
+                        <p><a class="cta inline-flex items-center py-3 px-2 text-lg leading-6 font-metapro-medium text-red-600 hover:text-red-800 no-underline hover:no-underline transition-all duration-300"
+                                href="#" target="_self" data-track-id="cta_internal"><i
+                                    class="icon-arrow-right text-sm mr-1"></i>继续</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-cta-section mx-auto">
+        <div class="container mx-auto py-16 max-w-screen-lg">
+            <h3 class="mb-5"></h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="simple-footer-box txtcomp bg-gray-100 p-5 px-10 flex flex-col justify-center items-center">
+                    <span class="mb-5 text-3xl md:text-6xl leading-none text-gray-500 bi bi-geo-alt-fill"></span>
+                    <p><b>联系方式</b></p>
+                    <p>FRITZ EGGER
+                        <br>Business Consulting (Shanghai) Co.
+                        <br>Room 1506-1507
+                        <br>No. 597 Lan Gao Road
+                        <br>200333 Pu Tuo District
+                        <br>Shanghai (CN)
+                    </p>
+                </div>
+                <div class="simple-footer-box txtcomp bg-gray-100 p-5 px-10 flex flex-col justify-center items-center">
+                    <span class="mb-5 text-3xl md:text-6xl leading-none text-gray-500 bi bi-telephone"></span>
+                    <p>Tel. +86 21 5234 06 88</p>
+                </div>
+                <div class="simple-footer-box txtcomp bg-gray-100 p-5 px-10 flex flex-col justify-center items-center">
+                    <span class="mb-5 text-3xl md:text-6xl leading-none text-gray-500 bi bi-mailbox"></span>
+                    <p><a class="cta inline-flex items-center py-3 px-2 text-lg leading-6 font-metapro-medium text-red-600 hover:text-red-800 no-underline hover:no-underline transition-all duration-300"
+                            href="/zh/contactform" target="_self" data-track-id="cta_external"><i
+                                class="bi bi-arrow-right text-sm mr-1"></i>联系表</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="footer-content">
             <div class="footer1 box1">
